@@ -1,0 +1,271 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, sans-serif;
+    box-sizing: border-box;
+}
+#header .header_container {    
+    border: 1px solid transparent;
+    background-image: url(../img/wheat.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#header nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 79%;
+    margin-top: 15px;
+    margin-left: auto;
+}
+#header nav a {
+    font-size: 24px;
+    color: #000;
+    text-decoration: none;
+}
+#header nav a:hover {
+    text-decoration: underline;
+}
+#header .header_div1 {
+    width: 60%;
+    margin-top: 90px;
+    margin-left: auto;
+    font-size: 38px;
+}
+#header .qd_agro {
+    font-size: 34px;
+    font-weight: 400;
+    color: #e2ba7b;
+}
+#header .header_div1 span {
+    display: block;
+    line-height: 55px;
+}
+#header button {
+    display: block;
+    padding: 15px 70px;
+    border: 3px solid transparent;
+    border-left: 3px solid #65aa44;
+    border-right: 3px solid #65aa44;
+    background-color: transparent;
+    font-size: 16px;
+    margin: -10px 10px 110px;
+}
+#header button:hover {
+    border: 3px solid #65aa44;
+    background-color: transparent;
+    color: #65aa44;
+    cursor: pointer;
+}
+#main_wrapper {
+    border: 1px solid transparent;
+    margin: 0 75px;
+}
+#main h2 {
+    margin: 20px 0;
+    padding-left: 10px;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 50px;
+    border-left: 8px solid #65aa44;
+    border-bottom: 2px solid #65aa44;
+}
+#section1 .section1_div1 {
+    display: flex;
+    justify-content: space-between;
+}
+#section1 .section1_div1 h3 {
+    margin: 0;
+    font-size: 26px;
+    color: #65aa44;
+}
+.section1_div1 span {
+    display: block;
+}
+#section2 {
+    border: 1px solid transparent;
+    margin-top: 30px;
+}
+#section2 .section2_div1 div {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(1, 50px);
+}
+#section2 .section2_div1 a {
+    position: relative;
+    font-size: 18px;
+    font-weight: 700;
+    color: #000;
+    text-decoration: none;
+}
+#section2 .section2_div1 img {
+    padding-right: 30px;
+}
+#section2 .section2_div1 a span {
+    position: absolute;
+    top: 10px;    
+}
+#section3 {
+    border: 1px solid transparent;
+    margin-top: 20px;
+}
+#section3 table {
+    width: 100%;
+    border-collapse: collapse;
+}
+#section3 th, td {
+    border: 1px solid #e2ba7b;
+    padding: 10px;
+    text-align: center;
+}
+#section4 {
+    border: 1px solid transparent;
+    margin-top: 20px;
+}
+#section4 .section4_div1 li {    
+    list-style-type: none;
+}
+#section4 .section4_div1 li::before {
+    content: "\2022";
+    padding-right: 10px;
+    color: #e2ba7b;
+}
+#section5 {
+    border: 1px solid transparent;
+    margin-top: 25px; 
+}
+#section5 .section5_container {
+    margin-top: 15px;
+    display: flex;
+}
+#section5 .section5_div {
+    border: 1px solid transparent;
+    margin: 10px 15px;
+    display: flex;
+    background: #fff;
+    box-shadow: 5px 3px 4px 2px #D3D3D3;
+}
+#section5 .section5_div img {
+    display: block;
+    margin: 0;
+    padding: 10px;
+    width: 25%;
+}
+#section5 .section5_div span {
+    display: block;
+    font-size: 14px;
+}
+#section5 .section5_div h4 {
+    font-weight: 500;
+}
+#section5 .section5_div p {
+    position: relative;
+}
+#section5 .section5_div time {
+    font-style: italic;
+    position: absolute;
+    top: -20px;
+}
+#footer {
+    border: 1px solid transparent;
+    margin-top: 20px;
+    background-color: #f5f5f5;    
+}
+#footer .footer_container {
+    display: flex;
+    width: 100%;
+}
+#footer .footer_div1 {    
+    width: 7%;
+    margin: 0px 35px;
+}
+#footer .footer_div1 h4 {
+    font-size: 18px;
+}
+#footer .footer_div1 img {
+    width: 30%;
+    margin: 10px 5px;   
+}
+#footer .footer_box {
+    margin-left: -30px;
+    display: grid;
+    grid-template-columns: repeat(3, 67%);
+    grid-template-rows: repeat(1, 300px);
+}
+#footer .footer_box span {
+    display: block;
+}
+#footer .footer_div2, .footer_div3, .footer_div4 {
+    margin-left: 10px;
+}
+@media (max-width: 992px) {
+    #header nav {        
+        width: 60%;    
+    }
+    #header nav a {
+        font-size: 20px;
+    }
+    #header nav a span {
+        display: block;
+    }
+    #header .header_div1 {
+        width: 50%;
+        font-size: 32px;
+    }
+    #section1 .section1_div1 div {
+        margin: 0 10px;
+    }
+    #section2 .section2_div1 div {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #section5 .section5_container {
+        flex-direction: column;
+    }
+    #footer .footer_container {
+        display: flex;
+        flex-direction: column;
+    }
+    #footer .footer_div1 img {
+        margin: 0;   
+    }
+    #footer .footer_box {
+        margin-left: 25px;
+        display: flex;
+        flex-direction: column;    
+    }
+}
+@media (max-width: 768px) {
+    #header nav {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(1, 50px);
+        width: 100%;    
+    }
+    #header nav a {
+        text-align: center;
+    }
+    #header nav a span {
+        display: inline;
+    }
+    #header .header_div1 {
+        width: 100%;
+        font-size: 24px;
+        text-align: center;
+    }
+    #header button {
+        margin: 0 auto;
+        padding: 10px 40px;
+        font-size: 14px;
+    }
+    #section1 .section1_div1 {
+        flex-direction: column;
+    }
+    #section2 .section2_div1 div {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    #section3 {
+        display: none;
+    }
+}
